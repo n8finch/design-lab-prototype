@@ -1,4 +1,4 @@
-$parallax-window-height: 30em;
+$parallax-window-height: 50vh;
 $parallax-background-height: $parallax-window-height * 2;
 
 .parallax-window {
@@ -17,8 +17,9 @@ $parallax-background-height: $parallax-window-height * 2;
 }
 
 .parallax-background {
-  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png") repeat;
-  background-position: top;
+  background: url("img/services/services.png") repeat;
+  background-position: 50%;
+  background-repeat: no-repeat;
   background-size: cover;
   background-color: beige;
   height: $parallax-background-height;
@@ -27,3 +28,4 @@ $parallax-background-height: $parallax-window-height * 2;
   top: - $parallax-window-height / 3;
   width: 100%;
 }
+

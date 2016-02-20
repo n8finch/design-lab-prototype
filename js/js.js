@@ -2,6 +2,15 @@
 
   $(document).ready(function () {
 
+    //Pulsing scroll replace
+    $(".hero-scroll").click(function() {
+      $('html, body').animate({
+        scrollTop: $("#about-us").offset().top
+      }, 2000);
+    });
+
+
+
     //Parallax Effect
     $(document).ready(function() {
       if ($("#js-parallax-window").length) {

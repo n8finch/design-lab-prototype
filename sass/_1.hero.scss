@@ -1,55 +1,64 @@
 .hero {
-  $base-border-radius: 3px !default;
-  $action-color: #477DCA !default;
-  $large-screen: em(860) !default;
-  $hero-background-top: #7F99BE;
-  $hero-background-bottom: #20392B;
-  $hero-color: white;
-  $gradient-angle: 10deg;
-  $hero-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
-
-  @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
-  background-color: #324766;
-  background-position: top;
+  background-image: url('img/header-images/hero-bg.png');
+  background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 3em;
-
-  .hero-logo img {
-    height: 4em;
-    margin-bottom: 1em;
-  }
-
-  .hero-inner {
-    @include outer-container;
-    @include clearfix;
-    margin: auto;
-    padding: 3.5em;
-    text-align: center;
-
-    .hero-copy {
-      text-align: center;
-
-      h1 {
-        color: $hero-color;
-        font-size: 1.6em;
-        margin-bottom: 0.5em;
-
-        @include media($large-screen) {
-          font-size: 1.8em;
-        }
-      }
-
-      p {
-        color: $hero-color;
-        line-height: 1.4em;
-        margin: 0 auto 3em auto;
-
-        @include media($large-screen) {
-          font-size: 1.1em;
-          max-width: 40%;
-        }
-      }
-    }
-  }
+  height: 100vh;
 }
+
+
+.hero-inner {
+  text-align: center;
+}
+
+.landing-logos {
+  width: 65px;
+  height: 65px;
+}
+
+#hero-logo {
+  margin-top: 20vh;
+}
+
+.hero-copy {
+  margin-top: 5vh;
+  color: #fff;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(1.1, 1.1);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+  };
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  };
+}
+
+.hero-scroll {
+  color: #fff;
+  font-size: $base-font-size*3;
+  position: absolute;
+  bottom: 20px;
+  -webkit-animation: pulse 1.25s linear infinite;
+  animation: pulse 1.25s linear infinite;
+}
+
+//.hero-scroll:hover {
+//  -webkit-animation: none;
+//  animation:none;
+//}

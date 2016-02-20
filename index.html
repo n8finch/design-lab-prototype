@@ -4,34 +4,43 @@
     <meta charset="UTF-8">
     <title>Working With Design Lab</title>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div id="fullPage">
         <!--Hero Section-->
-        <section class="vertical-scrolling">
+        <section class="vertical-scrolling" id="hero-section">
             <div class="hero">
                 <div class="hero-inner">
-                    <a href="" class="hero-logo"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png
-    " alt="Logo Image"></a>
+                    <img class="landing-logos" id="hero-logo" src="img/header-images/logo.png" alt="Logo Image">
                     <div class="hero-copy">
-                        <h1>Short description of Product</h1>
-                        <p>A few reasons why this product is worth using, who it's for and why they need it.</p>
+                        <h1>Working<br/>With Design Lab</h1>
+                        <h4>We’ve been helping startups launch and grow their businesses.<br/>We help you to fill the gap between development,<br/>design and product management.</h4>
                     </div>
+                    <span class="hero-scroll icon ion-android-arrow-dropdown-circle"></span>
+                    <!--<img class="hero-scroll" src="img/header-images/scroll.png" alt="Logo Image">-->
                 </div>
             </div>
         </section>
 
         <!--About Us Section-->
-        <section class="vertical-scrolling">
+        <section class="vertical-scrolling" id="about-us">
             <div id="wrap">
                 <div id="border">
                     <div id="title">
-                        <h3> This Title</h3>
+                        <h2>About Us</h2>
                     </div>
                     <div id="para">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut sem at leo rhoncus semper molestie nec ante. Quisque tincidunt eros vitae sollicitudin iaculis. Donec bibendum mi est, at viverra nulla iaculis suscipit. Curabitur nec risus laoreet, suscipit augue non, suscipit metus. Maecenas pellentesque convallis est, at accumsan dui pretium sit amet. Quisque ultricies sapien a laoreet commodo. Curabitur eu tellus ut est porttitor varius ut eu tellus. Integer non eros non lorem laoreet tincidunt. Nam ac aliquet eros. Etiam ornare nisi erat, quis mollis elit pretium convallis. Cras gravida ante in eleifend efficitur. Vestibulum a rutrum arcu. Vivamus sodales ornare purus sed luctus.
+                        <p> When you work with us, you are part of a team of committed collaborators.
+                            All aspects of our software development process are integrated, iterative and agile.</p>
+                        <p>Our approach unifies design, development and
+                            product management to create exceptional products.
+                            We start each project by understanding your business goals,
+                            the user’s needs and the product requirements.
+                            Then we help translate them into effective and elegant solutions.
                         </p>
                     </div>
                 </div>
@@ -43,7 +52,18 @@
         <section class="vertical-scrolling">
             <div id="js-parallax-window" class="parallax-window">
                 <div class="parallax-static-content">
-                    <b>Parallax Window</b>
+                    <div id="wrap">
+                        <div id="border">
+                            <div id="title">
+                                <h2>Services</h2>
+                            </div>
+                            <div id="para">
+                                <p>Before we sign a contract or write a line of code our team will spend the necessary time needed to understand your product vision.</p>
+                                <p>The outcome of this scoping session is a proposal or high-level statement of work.
+                                    Based on your requirements, we can provide a complete offering or just the pieces you need. </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div id="js-parallax-background" class="parallax-background"></div>
             </div>
@@ -55,11 +75,25 @@
             <div id="wrap">
                 <div id="border">
                     <div id="title">
-                        <h3> This Title</h3>
+                        <h2>What We Do</h2>
                     </div>
                     <div id="para">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut sem at leo rhoncus semper molestie nec ante. Quisque tincidunt eros vitae sollicitudin iaculis. Donec bibendum mi est, at viverra nulla iaculis suscipit. Curabitur nec risus laoreet, suscipit augue non, suscipit metus. Maecenas pellentesque convallis est, at accumsan dui pretium sit amet. Quisque ultricies sapien a laoreet commodo. Curabitur eu tellus ut est porttitor varius ut eu tellus. Integer non eros non lorem laoreet tincidunt. Nam ac aliquet eros. Etiam ornare nisi erat, quis mollis elit pretium convallis. Cras gravida ante in eleifend efficitur. Vestibulum a rutrum arcu. Vivamus sodales ornare purus sed luctus.
-                        </p>
+                        <img class="landing-logos" src="img/what-we-do/pen.png">
+                        <h3>Design</h3>
+                        <p>Our design practice offers a full range of services including branding strategy,
+                            interaction and visual design and user experience testing.
+                            Throughout your project, our designers create and implement visual designs and workflows, solicit user feedback, and work with you to make sure what gets built is what is needed.</p>
+                    </div>
+                    <div id="para">
+                        <img class="landing-logos" src="img/what-we-do/code.png">
+                        <h3>Development</h3>
+                        <p>All engineers are fluent in the latest enterprise, mobile and web development technologies.
+                            They collaborate with your team to write, test, and improve code on a daily basis, using proven practices such as test-driven development and pair programing.</p>
+                    </div>
+                    <div id="para">
+                        <img class="landing-logos" src="img/what-we-do/clipboard.png">
+                        <h3>Project Management</h3>
+                        <p>Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live. This iterative process allows for changes as business requirements evolve.</p>
                     </div>
                 </div>
             </div>
@@ -68,39 +102,14 @@
 
         <!--Gallery Section-->
         <section class="vertical-scrolling">
-            <div class="flex-boxes">
-                <a href="javascript:void(0)" class="flex-box flex-box-big">
-                    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2_dark.png" alt="">
-                    <h1 class="flex-title">A Wide Flex Box Item</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nostrum, libero! Laborum distinctio necessitatibus voluptates eaque officiis, unde illo, earum voluptatum rerum, reiciendis ipsa ex dolorem a dicta, maxime aliquam.</p>
-                </a>
-                <a href="javascript:void(0)" class="flex-box">
-                    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1_dark.png" alt="">
-                    <h1 class="flex-title">Flex Box Item</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum molestiae fugiat tenetur fugit atque dignissimos, fugiat natus vitae.</p>
-                </a>
-                <a href="javascript:void(0)" class="flex-box">
-                    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" alt="">
-                    <h1 class="flex-title">A Flex Box Item</h1>
-                    <p>Lorem adipisicing elit. Voluptas consectetur tempora quis nam, officia tenetur blanditiis in illo dolor?</p>
-                </a>
-                <a href="javascript:void(0)" class="flex-box flex-box-big">
-                    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2_dark.png" alt="">
-                    <h1 class="flex-title">Another Wide Item</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quis ipsum, officia, aperiam tenetur dolor molestiae voluptate perferendis dolorem vel ex, unde fugit blanditiis sapiente.</p>
-                </a>
-                <a href="javascript:void(0)" class="flex-box">
-                    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2_dark.png" alt="">
-                    <h1 class="flex-title">Flex Box Item</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo obcaecati in provident illo.</p>
-                </a>
-                <a href="javascript:void(0)" class="flex-box">
-                    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" alt="">
-                    <h1 class="flex-title">Last Flex Box Item</h1>
-                    <p>Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
-                </a>
-            </div>
-
+            <ul class="flex-container">
+                <li class="flex-item">Topwokz</li>
+                <li class="flex-item">Joint</li>
+                <li class="flex-item">Market</li>
+                <li class="flex-item">Worktop</li>
+                <li class="flex-item">Label</li>
+                <li class="flex-item">Kyiv</li>
+            </ul>
         </section>
 
 
@@ -109,11 +118,12 @@
             <div id="wrap">
                 <div id="border">
                     <div id="title">
-                        <h3> This Title</h3>
+                        <h2> This Title</h2>
                     </div>
                     <div id="para">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut sem at leo rhoncus semper molestie nec ante. Quisque tincidunt eros vitae sollicitudin iaculis. Donec bibendum mi est, at viverra nulla iaculis suscipit. Curabitur nec risus laoreet, suscipit augue non, suscipit metus. Maecenas pellentesque convallis est, at accumsan dui pretium sit amet. Quisque ultricies sapien a laoreet commodo. Curabitur eu tellus ut est porttitor varius ut eu tellus. Integer non eros non lorem laoreet tincidunt. Nam ac aliquet eros. Etiam ornare nisi erat, quis mollis elit pretium convallis. Cras gravida ante in eleifend efficitur. Vestibulum a rutrum arcu. Vivamus sodales ornare purus sed luctus.
+                        <p>Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live. This iterative process allows for changes as business requirements evolve.
                         </p>
+                        <button type="button" class="js-menu-trigger sliding-panel-button">Contact us</button>
                     </div>
                 </div>
             </div>
@@ -123,32 +133,7 @@
         <!--Footer Section-->
         <section class="vertical-scrolling">
             <footer class="footer" role="contentinfo">
-                <div class="footer-logo">
-                    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
-                </div>
-                <div class="footer-links">
-                    <ul>
-                        <li><h3>Content</h3></li>
-                        <li><a href="javascript:void(0)">About</a></li>
-                        <li><a href="javascript:void(0)">Contact</a></li>
-                        <li><a href="javascript:void(0)">Products</a></li>
-                    </ul>
-                    <ul>
-                        <li><h3>Follow Us</h3></li>
-                        <li><a href="javascript:void(0)">Facebook</a></li>
-                        <li><a href="javascript:void(0)">Twitter</a></li>
-                        <li><a href="javascript:void(0)">YouTube</a></li>
-                    </ul>
-                    <ul>
-                        <li><h3>Legal</h3></li>
-                        <li><a href="javascript:void(0)">Terms and Conditions</a></li>
-                        <li><a href="javascript:void(0)">Privacy Policy</a></li>
-                    </ul>
-                </div>
-
-                <hr>
-
-                <p>Disclaimer area lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nostrum repudiandae saepe.</p>
+                <p>© 2014. All Rights Reserved Ellipsis.com</p>
             </footer>
 
         </section>
@@ -173,6 +158,9 @@
     </div>
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/jquery.pulse.min.js"></script>
+    <script src="js/js.js"></script>
 
 </body>
 
