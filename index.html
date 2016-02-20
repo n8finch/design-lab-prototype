@@ -53,14 +53,16 @@
             <div id="js-parallax-window" class="parallax-window">
                 <div class="parallax-static-content">
                     <div id="wrap">
-                        <div id="border">
-                            <div id="title">
+                        <div id="border-services">
+                            <div id="border-partial">
+                            <div id="title-services">
                                 <h2>Services</h2>
                             </div>
-                            <div id="para">
+                            <div id="para-services">
                                 <p>Before we sign a contract or write a line of code our team will spend the necessary time needed to understand your product vision.</p>
                                 <p>The outcome of this scoping session is a proposal or high-level statement of work.
                                     Based on your requirements, we can provide a complete offering or just the pieces you need. </p>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -172,12 +174,28 @@
             <div id="wrap">
                 <div id="border">
                     <div id="title">
-                        <h2> This Title</h2>
+                        <h2>Contact Us</h2>
                     </div>
                     <div id="para">
                         <p>Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live. This iterative process allows for changes as business requirements evolve.
                         </p>
-                        <button type="button" class="js-menu-trigger sliding-panel-button">Contact us</button>
+                        <!--Modals Section-->
+                        <div id="modal-section">
+                            <div class="modal">
+                                <label for="modal-1">
+                                    <div class="modal-trigger modal-button">Contact Us</div>
+                                </label>
+                                <input class="modal-state" id="modal-1" type="checkbox" />
+                                <div class="modal-fade-screen">
+                                    <div class="modal-inner">
+                                        <div class="modal-close" for="modal-1"></div>
+                                        <h1>Modal Title</h1>
+                                        <p class="modal-intro">Intro text lorem ipsum dolor sit ametm, quas, eaque facilis aliquid cupiditate tempora cumque ipsum accusantium illo modi commodi  minima.</p>
+                                        <p class="modal-content">Body text lorem ipsum dolor ipsum dolor sit sit possimus amet, consectetur adipisicing elit. Itaque, placeat, explicabo, veniam quos aperiam molestias eriam molestias molestiae suscipit ipsum enim quasi sit possimus quod atque nobis voluptas earum odit accusamus quibusdam. Body text lorem ipsum dolor ipsum dolor sit sit possimus amet.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- EndModals Section-->
                     </div>
                 </div>
             </div>
@@ -187,29 +205,17 @@
         <!--Footer Section-->
         <section class="vertical-scrolling" id="footer-section">
             <footer class="footer" role="contentinfo">
-                <p>© 2014. All Rights Reserved Ellipsis.com</p>
+                <p>
+                    <span id="footer-span">
+                    <img id="footer-logo" src="img/footer/footer-logo.png">
+                        © 2014. All Rights Reserved Ellipsis.com
+                    </span>
+                </p>
             </footer>
-
         </section>
     </div>
 
-    <!--Modals Section-->
-    <div id="modal-section">
-        <div class="modal">
-            <label for="modal-1">
-                <div class="modal-trigger">Click for Modal</div>
-            </label>
-            <input class="modal-state" id="modal-1" type="checkbox" />
-            <div class="modal-fade-screen">
-                <div class="modal-inner">
-                    <div class="modal-close" for="modal-1"></div>
-                    <h1>Modal Title</h1>
-                    <p class="modal-intro">Intro text lorem ipsum dolor sit ametm, quas, eaque facilis aliquid cupiditate tempora cumque ipsum accusantium illo modi commodi  minima.</p>
-                    <p class="modal-content">Body text lorem ipsum dolor ipsum dolor sit sit possimus amet, consectetur adipisicing elit. Itaque, placeat, explicabo, veniam quos aperiam molestias eriam molestias molestiae suscipit ipsum enim quasi sit possimus quod atque nobis voluptas earum odit accusamus quibusdam. Body text lorem ipsum dolor ipsum dolor sit sit possimus amet.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>

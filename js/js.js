@@ -6,7 +6,7 @@
     $(".hero-scroll").click(function() {
       $('html, body').animate({
         scrollTop: $("#about-us").offset().top
-      }, 2000);
+      }, 1000);
     });
 
 

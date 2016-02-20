@@ -5,9 +5,6 @@
   $hover-tile-height: 10em;
   $base-spacing: 1.5em;
 
-  width: 100%;
-  align-content: center;
-
   background-position: top;
   background-size: cover;
   background-color: beige;
@@ -53,37 +50,38 @@
 }
 
 #gallery-section {
-  @include outer-container;
   max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
 #hover-tile-outer-1 {
   background: url("img/gallery/topworkz.png");
-  @include span-columns(3.50);
+  flex: 1;
 }
 
 #hover-tile-outer-2 {
   background: url("img/gallery/joint.png");
-  @include span-columns(4.50);
+  flex: 2;
 }
 
 #hover-tile-outer-3 {
   background: url("img/gallery/market.png");
-  @include span-columns(3.50);
+  flex: 1;
 }
 
 #hover-tile-outer-4 {
   background: url("img/gallery/worktop.png");
-  @include span-columns(3.50);
+  flex: 1;
 }
 
 #hover-tile-outer-5 {
   background: url("img/gallery/label.png");
-  @include span-columns(4.50);
+  flex: 2;
 }
 
 #hover-tile-outer-6 {
   background: url("img/gallery/kyiv.png");
-  @include span-columns(3.50);
+  flex: 1;
 }
