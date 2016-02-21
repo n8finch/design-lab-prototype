@@ -49,6 +49,11 @@
   }
 }
 
+.hover-tile-outer {
+  margin: 10px 0;
+  flex: 1 1 25%;
+}
+
 #gallery-section {
   max-width: 100%;
   display: flex;
@@ -58,30 +63,52 @@
 
 #hover-tile-outer-1 {
   background: url("img/gallery/topworkz.png");
-  flex: 1;
 }
 
 #hover-tile-outer-2 {
   background: url("img/gallery/joint.png");
-  flex: 2;
+  flex: 1 1 40%;
+  margin: 10px 20px;
 }
 
 #hover-tile-outer-3 {
   background: url("img/gallery/market.png");
-  flex: 1;
 }
 
 #hover-tile-outer-4 {
   background: url("img/gallery/worktop.png");
-  flex: 1;
 }
 
 #hover-tile-outer-5 {
   background: url("img/gallery/label.png");
-  flex: 2;
+  flex: 1 1 40%;
+  margin: 10px 20px;
 }
 
 #hover-tile-outer-6 {
   background: url("img/gallery/kyiv.png");
-  flex: 1;
+}
+
+@media all and (max-width:1000px) {
+
+  .gallery-section {
+    flex-wrap: wrap;
+  }
+
+  .hover-tile-outer {
+    flex: 1 1 100% !important;
+    margin: 10px !important;
+  }
+
+
+
+
+}
+
+@media all and (max-width:500px) {
+
+  .hover-tile-outer {
+    flex: 1 1 100% !important;
+  }
+
 }
