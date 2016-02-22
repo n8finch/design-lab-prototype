@@ -1,4 +1,4 @@
-.hero {
+#hero-section {
   background-image: url('img/header-images/hero-bg.png');
   background-position: 50%;
   background-repeat: no-repeat;
@@ -58,7 +58,14 @@
   animation: pulse 1.25s linear infinite;
 }
 
-//.hero-scroll:hover {
-//  -webkit-animation: none;
-//  animation:none;
-//}
+@media screen and (max-width: 768px) {
+
+  #hero-section {
+    height: 800px;
+  }
+
+  .hero-scroll {
+    display: none;
+  }
+
+}

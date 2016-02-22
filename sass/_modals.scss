@@ -96,7 +96,7 @@
     width: 95%;
 
     @include media($medium-screen) {
-      max-height: 70%;
+      min-height: 70%;
       padding: $modal-padding;
       width: 60%;
     }
@@ -150,8 +150,17 @@
   }
 }
 
+#modal-section {
+  margin: 20px;
+}
+
 .modal-open {
   overflow: hidden;
 }
 
-// Based on code by Kasper Mikiewicz
+
+@media screen and (min-width: 53.75em) {
+  .modal .modal-fade-screen {
+    padding-top: 5em;
+  }
+}
